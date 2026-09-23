@@ -75,6 +75,7 @@ class RisalUI {
   RisalUI& theme(Theme t);
   RisalUI& apName(const char* name) { _apSsid = name; return *this; }  // portal AP name
   RisalUI& apPass(const char* pass) { _apPass = pass; return *this; }  // portal AP password
+  RisalUI& configureAP(const char* name, const char* pass) { _apSsid = name; _apPass = pass; return *this; }  // portal AP name and password
   // Replace the "RisalDash · <title>" appbar wordmark with your own HTML brand (a <b> gets the accent
   // gradient), e.g. dash.brand("Risal<b>Hub</b>"). White-label the dashboard.
   RisalUI& brand(const char* html) { _brand = html; return *this; }
